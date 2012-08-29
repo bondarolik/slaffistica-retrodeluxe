@@ -24,12 +24,12 @@ $options = get_option('slaffistica_options');
 	<link rel="stylesheet" href="/libs/v6/fancybox/jquery.fancybox.css" />
 	
 	<script src="/libs/v6/js/jquery-latest.js"></script>
-	<script src="/libs/v6/js/html5/modernizr.js"></script>
-	<script src="/libs/v6/js/html5/EventHelpers.js"></script>
-	<script src="/libs/v6/js/html5/html5Widgets.js"></script>
-	<!--[if IE]>
-		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->	
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 	<script src="/libs/v6/js/retrodeluxe.js"></script>	
 	<script src="/libs/v6/js/cufon/cufon-yui.js"></script>
 	<script src="/libs/v6/js/cufon/Cuprum.font.js"></script>
@@ -37,7 +37,7 @@ $options = get_option('slaffistica_options');
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('a.fancy').fancybox();
-$('.gallery a').fancybox();
+		$('.gallery a').fancybox();
 		hover_links("a.socialicons");
 		hover_links("nav a");
 		hover_links("table.instafeed a img");
@@ -62,6 +62,7 @@ $('.gallery a').fancybox();
 	</script>
 				
 	<?php
+	# show be in theme options
 	$keywords = "slaff, slaffistica, вячеслав бондарук, slaffster, блог о латинской америке, сайты про южную америку, сайты про чили, жизнь в чили, иммиграция в чили, как открыть бизнес в чили, тур гиды в южной америке, работа в чили, работа в аргентине, как уехать в чили, русская община в чили, русские в чили, русские в южной америке, голые латинки";
 
 	if (is_home()) { 
@@ -85,13 +86,9 @@ $('.gallery a').fancybox();
 	<meta name='keywords' content='<?php echo $keywords; ?>' />
 	<meta name='description' content='<?php echo $description; ?>' />
 	<meta name='template' content='Slaffistica Retro Deluxe' />
-	<meta name='copyright' content='&copy; Вячеслав Бондарук. Lipresso Networks' />
+	<meta name='copyright' content='&copy; Lipresso Networks' />
 
-	<meta name="verify-v1" content="D9DQKQ06MlNxd+gWv+l1jOdmhqPvcW6r4VLm2JHH7Lc=" />
-	<meta name="google-site-verification" content="0Q7keW5ssc5uVVxu0YxABSH8Miu3FjZ4k5VdmQFYOno" />
-	<meta name="webmoney.attestation.label" content="webmoney attestation label#24511A97-0BCF-4C91-9FC1-F72D486A96B5" /> 
-	<meta name="msvalidate.01" content="92080B5AA64C7A5C06F8AFBA0F95F1CE" />
-	<meta content='890ab442' name='verification-key' />
+	<?php include (TEMPLATEPATH . '/includes/personalized-metas.php'); ?>
 
 	<link rel="index" href="http://www.slaff.net/">
 	<link rel="alternate" href="<?php bloginfo('rss2_url'); ?>" />
@@ -128,7 +125,6 @@ $('.gallery a').fancybox();
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-
 	</script>	
 </head>
 <body>

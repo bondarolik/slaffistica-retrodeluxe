@@ -15,36 +15,13 @@ grey: #413d33
 */
 
 /* HTML RESET ELEMENTS */
-* { margin: 0px; padding: 0px; }
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0px;
-    padding:0px;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-    list-style:none;
-}
+@import "css/reset.css"
 
 html { -webkit-font-smoothing: antialiased;	}
 
 /* --------------------------------------- HTML CANVAS DESGIN */
 article, aside, canvas, details, figcaption, figure, footer, 
-header, hgroup, menu, nav, section, summary, time { 
-    display:block;
-}
+header, hgroup, menu, nav, section, summary, time { display:block; }
 
 body { width: 100%; }
 
@@ -69,7 +46,6 @@ header {
 
 .bg-top {
 	display: block;
-
 	top: 0;
 	width: 100%;
 	height: 10px;
@@ -83,6 +59,7 @@ a#slaffistica {
 	height: 100px;
 	text-decoration: none;
 }
+
 a#slaffistica:hover { text-decoration: none; }
 a#slaffistica img { border: none; }
 
@@ -150,7 +127,7 @@ nav#dynamic {
 	right: 40px;
 	width: 120px;
 
-	display:none;/*hid the button first*/	
+	display:none; /*hide the button first*/	
 }
 
 a.menubuttons {
@@ -233,9 +210,7 @@ h1, h2, h3, h4, h5, p, cite { margin-bottom: 15px; }
 
 article h1 { text-align: center; }
 
-ul, ol {
-	margin: 0 0 15px 40px;
-}
+ul, ol { margin: 0 0 15px 40px; }
 ul li { list-style-type: square; }
 ol li { list-style-type: decimal; }
 ul li, ol li { margin-bottom: 5px; }
@@ -488,10 +463,7 @@ table.instafeed {
 	text-align: center;
 }
 
-table.instafeed tbody tr td a {
-	display: block;
-}
-
+table.instafeed tbody tr td a { display: block; }
 
 /* --------------------------------------- HELPERS */
 .clear { clear: both; }
@@ -512,6 +484,4 @@ table.instafeed tbody tr td a {
 	padding: 5px 0;
 }
 
-.vvqbox {
-	text-align: center;
-}
+.vvqbox { text-align: center; }
