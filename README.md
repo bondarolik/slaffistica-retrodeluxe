@@ -15,3 +15,6 @@ Be sure to include file with personalized html metas. Very useful for meta verif
 	<?php include (TEMPLATEPATH . '/includes/personalized-metas.php'); ?>
 	
 
+### Requirements
+
+Plugin Metabox: [developer's website](http://www.deluxeblogtips.com/meta-box/) or [git repo](https://github.com/rilwis/meta-box)
