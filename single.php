@@ -2,7 +2,7 @@
 
 <?php get_sidebar(); ?>
 
-<section id="content">
+<section id="content" class="content column">
 	<?php /* Initialize The Loop */ if (have_posts()) :  ?>
 
 	<section id="breadcrumbs">
@@ -83,5 +83,7 @@
 
 	<?php endif; # ( if (have_posts()) ) ?>
 </section><!--section#content-->
+
+<?php include (TEMPLATEPATH . '/nav-alt.php'); ?>
 
 <?php get_footer(); ?>
